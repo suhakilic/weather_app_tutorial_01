@@ -1,0 +1,59 @@
+role = "search" in a form tag is for an ARIA role
+
+Role attribute'ü, HTML elementlerine işlevsel roller atamak ve bu rolleri yardımcı teknolojilere iletmek için kullanılır. Bu, web sayfalarının erişilebilirliğini artırmanın önemli bir yoludur.
+
+Yaygın role Değerleri:
+role="button": Bir öğeyi buton olarak tanımlar.
+role="navigation": Bir öğeyi gezinme menüsü olarak tanımlar.
+role="main": Sayfanın ana içeriğini belirler.
+role="search": Bir arama işlevini veya arama alanını belirtir.
+role="dialog": Bir öğeyi açılır pencere (modal) olarak tanımlar.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+role = "searchbox" is an ARIA role used to indicate that an element, typically an <input> element, is a search field. This role helps screen readers and other assistive technologies understand that the input is intended for users to type a search query.
+
+role="search":      Genellikle bir form veya bölümün arama ile ilgili olduğunu belirtir. Bu, tüm arama alanını kapsar.
+role="searchbox":   Spesifik olarak arama yapılan giriş alanını (genellikle bir <input>) belirtir.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+role = "region"
+
+role="region", ARIA (Accessible Rich Internet Applications) standardında kullanılan bir rol olup, bir HTML bölümünü veya kapsayıcıyı anlamlı bir bölge olarak tanımlar. Bu rol, özellikle ekran okuyucu gibi yardımcı teknolojilere, bu bölümün web sayfasında bağımsız bir içerik alanı olduğunu belirtir. Böylece, kullanıcılar bu bölgenin önemli bir içerik alanı olduğunu ve odaklanmaları gerektiğini anlayabilirler.
+
+Kullanım Koşulları:
+role="region" sadece anlamlı ve belirgin bölümler için kullanılmalıdır. Örneğin, bir web sayfasında birden fazla içerik bölümü varsa ve bu bölümlerden biri önemli bilgiler içeriyorsa, bu bölümü bir bölge olarak tanımlamak erişilebilirliği artırır.
+Ayrıca, başlık (aria-label veya aria-labelledby) ile birlikte kullanılmalıdır. Bu, ekran okuyucuların bu bölgeyi tanımlamasına yardımcı olur.
+
+Neden Kullanılır?
+Erişilebilirlik: Ekran okuyucu kullanan kişiler için, sayfada önemli ve anlamlı içerik bölgelerini tanımlayarak, bu bölgelere kolayca erişim sağlar.
+Navigasyon Kolaylığı: Kullanıcılar, sayfa içindeki farklı bölgeleri daha kolay gezebilir ve doğrudan anlamlı içerik alanlarına ulaşabilir.
+Anlam ve Odak: İçerik yoğun web sayfalarında, bir bölümü diğerlerinden ayırmak ve kullanıcının dikkatini çekmek için kullanılır.
+
+Ne Zaman Kullanılır?
+Bağımsız ve Anlamlı Bölümler: Bir web sayfasında diğer bölümlerden ayrılması gereken, bağımsız olarak anlam ifade eden önemli içerik alanları için.
+Yinelenmeyen İçerik: Menü, footer gibi yinelenen öğeler için kullanılmaz. Daha çok içerik odaklı alanlar için uygundur.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+aria-live="assertive" bir ARIA özelliğidir ve dinamik olarak değişen içeriklerin yardımcı teknolojiler (örneğin ekran okuyucular) tarafından anında bildirilmesini sağlar. Bu özellikle, kullanıcının acil olarak bilgilendirilmesi gereken durumlarda kullanılır. Örneğin, hata mesajları veya kritik bildirimler gibi kullanıcıya hemen aktarılması gereken içerikler için uygundur.
+
+aria-live="assertive" Nasıl Çalışır?
+Anlık Bildirim: Sayfa içeriği güncellendiğinde veya değiştiğinde, ekran okuyucular bu değişikliği hemen kullanıcıya okur, genellikle başka içerikleri kesip bu mesajı öne çıkarır.
+Kritik Değişiklikler: Kullanıcı arayüzünde önemli olaylar (örneğin, form hatası, oturum zaman aşımı) gibi hemen dikkat çekmesi gereken durumlarda kullanılır.
+
+Neden Kullanılır?
+Erişilebilirlik: Görsel uyarılar yerine sadece ekran okuyucuya bağlı olan kullanıcıların kritik olaylardan haberdar olmasını sağlar.
+Kullanıcı Deneyimi: Formlar, süreçler veya işlemler sırasında anında geri bildirim gerektiren olaylarda kullanıcının zamanında bilgilendirilmesine olanak tanır.
+
+aria-live="assertive" ve aria-live="polite" Arasındaki Fark:
+aria-live="assertive": Değişiklikler hemen bildirilmeli ve ekran okuyucu mevcut okumayı keserek bu bilgiyi anında iletir.
+aria-live="polite": Değişiklikler ekran okuyucunun mevcut okumayı tamamlamasından sonra bildirilir. Daha az acil içerik değişiklikleri için uygundur.
+
+Kullanım Durumları:
+Form hataları: Bir formu yanlış doldurduğunuzda, hata mesajı hemen okunmalıdır.
+Acil uyarılar: Oturumun zaman aşımına uğraması veya kritik bir sistem hatası gibi önemli uyarılarda kullanılır.
+Bu özellik, web uygulamalarında erişilebilirliği artırarak, özellikle görme engelli kullanıcıların kritik içerik değişikliklerini hızlıca fark etmelerine yardımcı olur.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
