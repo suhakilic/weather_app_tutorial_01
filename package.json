@@ -1,7 +1,6 @@
 {
   "name": "5.-suhacan-kilic-weather-app",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "data-uri-to-buffer": "^4.0.1",
@@ -16,5 +15,6 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": ""
 }
