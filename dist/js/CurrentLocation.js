@@ -6,14 +6,6 @@ export default class CurrentLocation {
     this._unit = "imperial";
   }
 
-  //   >>> Note about underscore:
-  //   The underscore before property names (e.g., _name, _lat) is a convention
-  //   to indicate that these properties are intended to be private or internal
-  //   to the class. Although JavaScript doesn't enforce true privacy, this
-  //   convention signals to other developers that these properties should
-  //   not be accessed directly from outside the class. Instead, getter
-  //   and setter methods (like getName() and setName()) should be used.
-
   getName() {
     return this._name;
   }
